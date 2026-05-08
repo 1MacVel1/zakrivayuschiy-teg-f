@@ -1,3 +1,17 @@
 {
-  "extends": "stylelint-config-standard"
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z0-9\\-_]+$",
+      {
+        "message": "Имя класса должно состоять из строчных букв, цифр, дефисов или подчеркиваний (БЭМ)"
+      }
+    ],
+    "custom-property-pattern": [
+      "^[a-z0-9\\-_]+$",
+      {
+        "message": "Имя переменной должно состоять из строчных букв, цифр, дефисов или подчеркиваний"
+      }
+    ]
+  }
 }
