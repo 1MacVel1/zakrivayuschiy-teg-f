@@ -7,7 +7,7 @@
   --font-weight-title: 715;
   --font-weight-text: 400;
   --font-size-base: 18px;
-  --font-button__text: 14px;
+  --font-button-text: 14px;
   --bg-image-grad:
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),

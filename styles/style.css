@@ -83,7 +83,6 @@
 
 .article-title {
   padding: 5px 10px;
-  font-weight: var(--font-weight-title);
   font-variation-settings: 'wght' var(--font-weight-title, 715);
   color: var(--color);
   background-color: var(--bg-color);
@@ -102,7 +101,7 @@
   right: 25px;
   font-family: var(--font-accent), fantasy;
   font-weight: var(--font-weight-text);
-  font-size: var(--font-button__text);
+  font-size: var(--font-button-text);
   color: var(--color);
   text-shadow: 0 0 1px var(--shadow-color);
   mix-blend-mode: hard-light;
@@ -239,7 +238,7 @@
 
 .button__text {
   font-family: var(--font-accent), sans-serif;
-  font-size: var(--font-button__text);
+  font-size: var(--font-button-text);
   font-weight: var(--font-weight-text);
   line-height: 90%;
   position: relative;
@@ -258,7 +257,6 @@
   gap: 8px;
   padding: 0 20px;
   margin-bottom: 100px;
-  background-color: var(--bg-color);
 }
 
 .floppy {
@@ -274,7 +272,7 @@
   align-items: center;
   font-family: var(--font-accent), fantasy;
   font-weight: var(--font-weight-text);
-  font-size: var(--font-button__text);
+  font-size: var(--font-button-text);
   line-height: 150%;
   text-transform: uppercase;
   gap: 20px;
