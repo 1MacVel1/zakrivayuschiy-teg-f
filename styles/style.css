@@ -61,7 +61,7 @@
   gap: 50px;
 }
 
-.article-list {
+.article {
   width: var(--page-width);
   outline: var(--border-style);
   list-style: none;
@@ -71,7 +71,7 @@
   flex-direction: column;
 }
 
-.article-list:not(:last-child) {
+.article:not(:last-child) {
   gap: 52px;
 }
 
@@ -90,7 +90,7 @@
   font-size: var(--font-size-base);
 }
 
-.article-image_box {
+.article-image-box {
   outline: var(--border-style);
   position: relative;
   margin: 0 0 5px;
@@ -176,7 +176,7 @@
   font-weight: var(--font-weight-base);
 }
 
-.button-block {
+.button-article-block {
   display: flex;
   align-self: end;
   gap: 7px;
@@ -214,6 +214,16 @@
   transition: box-shadow 0.3s ease;
 }
 
+.button::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  transition: translate 0.5s ease-in-out;
+  translate: -100% 0;
+  background-color: var(--color);
+  inset: 0;
+}
+
 .button:hover::before {
   translate: 0;
 }
@@ -238,8 +248,8 @@
   mix-blend-mode: difference;
 }
 
-button-save-area {
-  background-color: var(--bg-color);
+.button-save-box {
+  background-color: transparent;
 }
 
 .button-save {
@@ -255,21 +265,11 @@ button-save-area {
   width: 21px;
   height: 21px;
   background-color: var(--bg-color);
-  position: relative; /* только так дискета становится белая, больше никак mix-blend-mode: difference работает некорректно, при том что у svg нет привязки к цвету, все фоны у родителей белые, а псевдоэлемент лежит ниже */
+  position: relative;
   z-index: 1;
 }
 
-.button::before {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  transition: translate 0.5s ease-in-out;
-  translate: -100% 0;
-  background-color: var(--color);
-  inset: 0;
-}
-
-.save-prompt {
+.dialog-svg {
   display: flex;
   align-items: center;
   font-family: var(--font-accent), fantasy;
@@ -280,11 +280,11 @@ button-save-area {
   gap: 20px;
 }
 
-.save-prompt svg {
+.dialog-svg svg {
   flex-shrink: 0;
 }
 
-.button-ok {
+.ok-button {
   width: 100%;
   max-width: 293px;
   height: 38px;
@@ -331,7 +331,7 @@ body:has(.modal[open]) {
     padding: 15px 20px;
   }
 
-  .button-ok {
+  .ok-button {
     width: 100%;
   }
 
@@ -339,6 +339,5 @@ body:has(.modal[open]) {
     margin-block: 100px 97px;
   }
 }
-
 
 /* для неудачных комитов */
