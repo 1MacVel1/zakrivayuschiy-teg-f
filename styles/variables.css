@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --font-base: 'Inter-Variable', Arial, sans-serif;
+  --font-base: 'Inter-Variable', arial, sans-serif;
   --font-accent: 'PressStart2P', fantasy;
   --font-weight-base: 410;
   --font-weight-title: 715;
@@ -19,14 +19,17 @@
   --header-subtitle-font-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
   --header-padding: clamp(122px, calc(119.183px + 0.751vw), 130px) clamp(16px, calc(-21.5px + 10vw), 122.5px);
   --border-style: 2px solid #000;
-  --shadow-color: rgba(255, 255, 255, 1);
+  --shadow-color: rgb(255 255 255 / 100%);
   --time_step: 0.3s;
   --heart-contour-color: #000;
-  --heart-sparks-color: #ff0000;
+  --heart-sparks-color: #f00;
 
 }
+
 @media (width <= 375px) {
   :root {
     --page-width: clamp(320px, calc(0px + 100vw), 375px);
   }
 }
+
+/* для неудачных комитов */

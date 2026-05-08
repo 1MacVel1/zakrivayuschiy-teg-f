@@ -339,3 +339,6 @@ body:has(.modal[open]) {
     margin-block: 100px 97px;
   }
 }
+
+
+/* для неудачных комитов */

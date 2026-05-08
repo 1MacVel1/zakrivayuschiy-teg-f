@@ -37,7 +37,7 @@ a {
 
 button,
 input {
-  color: currentColor;
+  color: currentcolor;
   font-family: inherit;
   font-size: inherit;
 }
@@ -56,3 +56,5 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* для неудачных комитов */
