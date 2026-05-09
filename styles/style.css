@@ -63,7 +63,6 @@
 
 .article {
   width: var(--page-width);
-  outline: var(--border-style);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -166,7 +165,7 @@
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .article-text {
@@ -197,6 +196,7 @@
   align-self: end;
   width: 130px;
   background-color: transparent;
+  min-block-size: 38px;
 }
 
 .button {
